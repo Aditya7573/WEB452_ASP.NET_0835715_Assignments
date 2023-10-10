@@ -1,6 +1,6 @@
 # WEB452_ASP.NET_0835715_Assignments
-#Date:04-10-2023
-#Time:0603
+# Date:04-10-2023
+# Time:0603
 
 Started the Project with the fresh mind set bring back the memories from the C# assignment nowlets start the assignment firstly we will see the requiermenets and the assignment details. it say we have to create the MVC application with some functionalities and Some added pages.
 

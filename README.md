@@ -322,3 +322,58 @@ now we will add the vadilation step
 
 add the nessearcy validation points in the fields here is my code looking now 
 
+        [Required]
+        [StringLength(60, MinimumLength = 3)]
+        public string Design { get; set; } // Design or style of the tie
+
+        [Display(Name = "Release Date")]
+        [DataType(DataType.Date)]
+        public DateTime ReleaseDate { get; set; } // Date when the tie was released or manufactured
+
+        [Required]
+        [StringLength(30)]
+        public string Material { get; set; } // Material of the tie (e.g., Silk, Polyester)
+
+        [Required]
+        [Range(1, 100)]
+        [DataType(DataType.Currency)]
+        [Column(TypeName = "decimal(18, 2)")]
+        public decimal Price { get; set; } // Price of the tie
+
+        public bool IsAvailable { get; set; } // Indicates whether the tie is currently available in stock
+
+        [Required]
+        public CustomRatingScale Rating { get; set; }
+
+Now everything is done in  the link and works good and amazingly 
+Its time is 1221
+
+Now we wil do the about us we will create an new file for in the Home/AboutUS.cshtml
+
+Added the nessearcy contains for the according to the requierement 
+now we will add the CSS style in the aboutus file and i got the idea to add the these css file in my index.cshtml and in my tie folder with the all Create...Details and all file so that my table will also get the css and also added the fonts in the css and we did the navigation link to the table in the index file so that sir can go from home to table by clicking on the link and on the home page we added the image by creatin g the new folder in wwwroot and name the folder img and added four image from the internet and linked them and added the 
+in the index.cshtml 
+DATE: 2023-10-10
+time : 1209
+Now i have to publish the application in the azure AND MY STIDENT AZURE ACCOUNT IS EXPIERDED I emailed the sir about the situation atleast see what happens.
+
+Date : 2023-10-11
+
+Got the meesage from the sir i have re-take the azure student a count did it 
+now we will publish 
+
+     Link : https://adityatie20231010173153new.azurewebsites.net/
+Date : 2023-10-11
+publish is done 
+but the table is not working we will try to figure out this thing.....
+
+
+Date : 2023-10-12
+time0231
+still trying to figure out the database table but i dont think its gonna work so we will call it the assignment because today we have to submit the assignment so i will call it done from my side i have did each and everything possible from side on alteast see how much marks we get fingers crossed 
+
+Thank you so much sir for the assignmment had and fun and little problem but loved it.
+
+
+
+ 

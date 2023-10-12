@@ -232,4 +232,11 @@ Time 1407
 
 ## Part 8, add a new field to an ASP.NET Core MVC app
 
-Which is unique 
+Which is unique part as we have to add the rating witht the custome rating with 1-5 as poor to excellent 
+
+my updated Tie.cs 
+ and 
+
+ and adding the Bind Property value in the create and edit.cshtml file with rating 
+
+ also editing the index file as shown in the website

@@ -151,6 +151,52 @@ Byeeee
 
 ## Part 7 add search to an ASP.NET Core MVC app
 
+        public async Task<IActionResult> Index(string tieMaterial, string searchString)
+        {
+            // Use LINQ to get list of tie materials.
+            IQueryable<string> materialQuery = from t in _context.Tie
+                                               orderby t.Material
+                                               select t.Material;
+
+            var ties = from t in _context.Tie
+                       select t;
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                ties = ties.Where(s => s.Design.Contains(searchString));
+            }
+
+            if (!string.IsNullOrEmpty(tieMaterial))
+            {
+                ties = ties.Where(x => x.Material == tieMaterial);
+            }
+
+            var tieMaterialVM = new TieMaterialViewModel
+            {
+                Materials = new SelectList(await materialQuery.Distinct().ToListAsync()),
+                Ties = await ties.ToListAsync()
+            };
+
+            return View(tieMaterialVM);
+        }
+
+
+this was my code after i did all my editing and changing and everyhting you can say this the final code to add search string 
+
+Views/Ties/Index.cshtml
+
+Added the code 
+
+     <form asp-controller="Movies" asp-action="Index">
+         <p>
+             Title: <input type="text" name="SearchString" />
+             <input type="submit" value="Filter" />
+         </p>
+     </form>
+
+for html 
+
+## Main part for the assignment adding the rating with (1-5)
 
 
 

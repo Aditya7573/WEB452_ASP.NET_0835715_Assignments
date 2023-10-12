@@ -294,3 +294,31 @@ Update the /Views/Ties/Create.cshtml with a Rating field
 
 Also Updated the Seed data here is the one example :
 
+         Id = 1,
+         Design = "Classic Striped",
+         ReleaseDate = DateTime.Parse("2023-10-05"),
+         Material = "Silk",
+         Price = 29.99M,
+         IsAvailable = true,
+         Rating = CustomRatingScale.Three
+         
+Time : 2343
+
+Updated the
+
+               Add-Migration Rating
+               Update-Database
+
+Date : 2023-10-09
+time : 0732
+
+its been two days since i have seen the code 
+
+checked my pervious codes and tested the application agin its working greatly 
+
+now we will add the vadilation step 
+
+## Part 9 Validation step 
+
+add the nessearcy validation points in the fields here is my code looking now 
+

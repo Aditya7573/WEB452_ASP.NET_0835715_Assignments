@@ -13,5 +13,6 @@
     <WebStackScaffolding_DbContextTypeFullName>Aditya_Tie.Data.TieContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
+    <NameOfLastUsedPublishProfile>C:\Users\W0835715\Desktop\Aditya_Tie\Aditya_Tie\Properties\PublishProfiles\AdityaTie20231010173153NEW - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

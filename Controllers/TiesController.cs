@@ -50,7 +50,7 @@ namespace Aditya_Tie.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Design,ReleaseDate,Material,Price,IsAvailable,Rating")] Tie tie)
+        public async Task<IActionResult> Create([Bind("Design,ReleaseDate,Material,Price,IsAvailable,Rating")] Tie tie)
         {
             if (ModelState.IsValid)
             {

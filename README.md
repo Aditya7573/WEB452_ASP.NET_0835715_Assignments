@@ -67,5 +67,92 @@ Scaffold pages
 
 Add Controller dialog:
 
-Model class: Tie (Tie.Models)
-Data context class: TieContext (Tie.Data)
+Model class: Tie (Aditya_Tie.Models)
+Data context class: TieContext (Aditya_Tie.Data)
+
+Followed the steps and got the error , it says  the
+
+                   build failed try it again 
+
+its now 0819 pass
+
+and still figuring out the error
+i think there is somestep missing from my side or  the tere is a syntax error or i think there might me channce in the changing name from movie to tie i messed up some were......
+
+its 1023
+and finally found the error. There was multiple things i change firstly i checked my code in the Tie.cs and TieContext.cs. Then, there was also a extra curly bracket in there...and maybe something more but I just looked at the code carefully and comparing with it the movie code.
+
+So now we got our controller which is TieControlller.cs and there is also Razor view files for Create, Delete, Details, Edit, and Index pages (*Views/Movies/`.cshtml`)
+
+Now we will take rest and come back next day
+Date : 2023-10-06
+Time 0914
+
+I am in college and now we will start where we left of so next step is migration 
+
+           Add-Migration InitialCreate
+           Update-Database
+
+Run the Above two code in My PMC ran flawlessly, which surprised me, but it is all good and we will not ruin it Lollll.
+
+Tested the application running and it showing the  blank table with my field names thats good and now we will not check it because i know if i put the create new in there then i have to 
+
+     SqlException: Cannot open database "TieContext-1" requested by the login. The login failed.
+           
+ By the way i got this error because i didnt know that pmc runs i commanad at aone time so i was trying to work quickly and i tried to run both command Add database one and update database one togthere and it ran only first one so i learned my lesson not to do work quick. slow and steady wins the race in class adrew taught us loolllll.
+
+ time : 0345
+ 
+Each and every thing is looking good and everything is were it should be 
+
+## Part 5 Working with sql
+ 
+Check the table designer and table data there is each and every field and there is not a data in it obivousuly we didnt add the data.
+
+Now we will create SeedData.cs in the Model Folder 
+
+its just similar code to the the Movie Seeddata file but here we will add our own space names and filed to it and we need to add 10 entries in it, which I will create at  time 
+
+time : 0912
+
+Similar now we will update the Our Program.cs 
+
+which was not easy for me i have to write manually each and every line its good practice but still it was not loving 
+
+I tested the Application everything is on point this time i was preety much confident.
+
+## Part 6 REquiered field should be proper 
+
+NOTE : GRABAGE IN GRABAGE OUT 
+
+so we have to specify what should be go inside each field so that we can not get the database 
+
+      using System.ComponentModel.DataAnnotations;
+       using System.ComponentModel.DataAnnotations.Schema;
+For my price : [Column(TypeName = "decimal(18, 2)")]
+For my Release Data :         [Display(Name = "Release Date")]
+                              [DataType(DataType.Date)]
+
+
+Recalling the Index by this :
+
+                      app.UseEndpoints(endpoints =>
+            {
+    endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}");
+        });
+
+time : 1208
+
+its late now so we do rest late 
+
+Byeeee
+
+## Part 7 add search to an ASP.NET Core MVC app
+
+
+
+
+
+

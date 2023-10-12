@@ -53,10 +53,19 @@ See this the one now we will Add Movie.cs Means We will Add the Tie.Cs file in t
 We Will perfome now the NUGET package From PMC Console Posted the Code
 #### Install-Package Microsoft.EntityFrameworkCore.SqlServer With Vesrion 3.1.12
 
-Now Similar We Will Creater a NEw File name in The Data Folder Which e=we WIll Create From the Scratch Abnd replace the Code Carefull withmy names and Namspacenot the movie and i definetliy think this movie and tie will create an error in my application in think but i hope it should not create this kind of error 
+Now Similar We Will create a NEw File name in The Data Folder Which e=we WIll Create From the Scratch Abnd replace the Code Carefull withmy names and Namspacenot the movie and i definetliy think this movie and tie will create an error in my application, but i hope it should not create this kind of error 
 now 
 using Aditya_Tie.Data;
 using Microsoft.EntityFrameworkCore;
 Add this think 
+After thus configuered the databasse 
+ 
+     options.UseSqlServer(Configuration.GetConnectionString("TieContext")));
 
+Time: 0456
+Scaffold pages
 
+Add Controller dialog:
+
+Model class: Tie (Tie.Models)
+Data context class: TieContext (Tie.Data)

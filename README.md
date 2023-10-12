@@ -285,3 +285,12 @@ my updated Tie.cs
  and adding the Bind Property value in the create and edit.cshtml file with rating 
 
  also editing the index file as shown in the website
+
+      <th>
+            @Html.DisplayNameFor(model => model.Tie[0].Rating)
+        </th>
+
+Update the /Views/Ties/Create.cshtml with a Rating field
+
+Also Updated the Seed data here is the one example :
+

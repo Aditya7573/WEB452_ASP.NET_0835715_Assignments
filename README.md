@@ -148,7 +148,8 @@ time : 1208
 its late now so we do rest late 
 
 Byeeee
-
+Date : 2023-10-07
+Time 1041
 ## Part 7 add search to an ASP.NET Core MVC app
 
         public async Task<IActionResult> Index(string tieMaterial, string searchString)
@@ -196,7 +197,7 @@ Added the code
 
 for html 
 
-## Main part for the assignment adding the rating with (1-5)
+## TieMaterialViewModel.cs 
 
 
 MY TieMaterialViewModel.cs 
@@ -215,7 +216,20 @@ MY TieMaterialViewModel.cs
         }
     }
 
- i also changed the tie.cs and added the new pubic property to fill the assignment requierement 
- 
+also updated the index.cshtml to make the
+to add the cshtml file to get 
+
+     <select asp-for="TieMaterial" asp-items="Model.Material">
+            <option value="">All</option>
+        </select>
+
+        Title: <input type="text" asp-for="SearchString" />
+
+working ammzingly
 
 
+Time 1407
+
+## Part 8, add a new field to an ASP.NET Core MVC app
+
+Which is unique 

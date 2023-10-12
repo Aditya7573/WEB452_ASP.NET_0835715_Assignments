@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/aditya-tiedbserver/databases/Aditya_Tie_db",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:Server=(localdb)\\\\mssqllocaldb;Database=TieContext-2;Trusted_Connection=True;MultipleActiveResultSets=true",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:Server=(localdb)\\\\mssqllocaldb;Database=TieContext-2;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+  }
+}
